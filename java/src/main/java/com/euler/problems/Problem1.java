@@ -23,8 +23,8 @@ public class Problem1 {
 	
 	public int SumOf3or5() {
 		int sum = 0;
-		for(int i = 0; i < 1000; i++) {
-			int current = natural.get(i);
+		for(int i = 1; i < 1000; i++) {
+			int current = natural.get(i-1);
 			if(current % 3 == 0 || current % 5 == 0) {
 				sum += current;
 			}
